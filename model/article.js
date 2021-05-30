@@ -46,7 +46,7 @@ module.exports = class Article extends require('./model') {
             })
         })
     }
-    /**
+        /**
      * 获取指定关键词的文章列表
      * @param {string}} keyword 关键词
      */
@@ -61,7 +61,7 @@ module.exports = class Article extends require('./model') {
                 })
             })
         }
-    /**
+            /**
      * 获取指定文章的详情
      * @param {integer} id 文章编号
      */
@@ -76,5 +76,4 @@ module.exports = class Article extends require('./model') {
             })
         })
     }
-
 }

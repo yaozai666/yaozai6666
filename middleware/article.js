@@ -57,7 +57,7 @@ module.exports = {
      * 获取指定文章的详情
      */
     getArticleById: (req, res, next) => {
-        let {id} = req.params
+        let id = req.params.id
         Article.getArticleById(id).then(results => {
             req.article = results
             next()

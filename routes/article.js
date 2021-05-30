@@ -18,6 +18,6 @@ articleApp.get('/list/:id', [article.getListByCategoryId, category.getList,categ
 //文章详情页
 articleApp.get('/:id',article.getArticleById,(req,res) =>{
     let {categories,article} = req
-    res.render('article',{categories: categories,article:article})
+    res.render('article',{categories:categories,article:article})
 })
 module.exports = articleApp

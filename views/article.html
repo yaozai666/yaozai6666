@@ -3,7 +3,7 @@
         <nav>
             <ol class="breadcrumb bg-white">
                 <li class="breadcrumb-item"><a href="/">首页</a></li>
-                <li class="breadcrumb-item"><a href="/article/list/<%=article.category_id%>"><%=article.name%></article.name></li>
+                <li class="breadcrumb-item"><a href="/article/list/<%=article.category_id%>"><%=article.name%></a></li>
                 <li class="breadcrumb-item active"><%=article.title%></li>
             </ol>
         </nav>
@@ -11,7 +11,7 @@
             <div class="card-header bg-white">
                 <h3 class="card-title m-0"><%=article.title%></h3>
                 <p class="text-muted small mt-2 m-0">
-                    <span class="mr-3">发表时间：<%= articles.time.toLocaleString()%></span>
+                    <span class="mr-3">发表时间：<%=article.time.toLocaleString()%></span>
                     <span class="mr-1">点击：<%=article.hits%></span>
                 </p>
             </div>
