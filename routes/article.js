@@ -10,6 +10,7 @@ const articleApp = express()
 
 articleApp.use(category.getList)
 
+
 //文章列表页
 articleApp.get('/list/:id', [article.getListByCategoryId, category.getList,category.getCategoryById], (req, res) => {
     let { articles, categories,category } = req

@@ -55,7 +55,7 @@
                     <h5 class="card-title"><%= articles.title%></h5>
                     <p class="card-text"><small class="text-muted"><%= articles.time.toLocaleString()%></small>%></small></p>
                     <p class="card-text"><%= articles.content.replace(/<[^>]+>/g,'').substring(0,100) %>...%></p>
-                    <a href="/article/<%=article.id%>"  class="stretched-link"></a>
+                    <a href="/article/<%=articles.id%>"  class="stretched-link"></a>
                 </div>
             </div>
         </div>
